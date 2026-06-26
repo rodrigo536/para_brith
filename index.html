@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Brithany &#128156;</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <video id="bgVideo" autoplay muted loop playsinline>
+    <source src="videos/video1.mp4" type="video/mp4">
+  </video>
+
+  <audio id="bgMusic" loop>
+    <source src="music/Elvis Presley — Can't Help Falling In Love [Sub. Español] - armxndo (128k).mp3" type="audio/mpeg">
+  </audio>
+
+  <div id="particles"></div>
+  <div id="heart-container"></div>
+  <div id="kuromi-container"></div>
+
+  <button id="musicToggle" class="music-toggle" type="button" aria-label="Activar musica">
+    &#127925;
+  </button>
+
+  <img src="img/kuromi1.png" class="corner top-left" alt="Kuromi">
+  <img src="img/kuromi2.png" class="corner top-right" alt="Kuromi">
+  <img src="img/kuromi1.png" class="corner bottom-left" alt="Kuromi">
+  <img src="img/kuromi2.png" class="corner bottom-right" alt="Kuromi">
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Un regalo hecho solo para ti</p>
+        <h1 class="main-title">Feliz Cumplea&ntilde;os</h1>
+        <h2 class="neonName">BRITHANY &#128156;</h2>
+
+        <p class="subtitle">
+          20 a&ntilde;os de la mujer m&aacute;s hermosa del mundo
+        </p>
+
+        <p class="love-date">
+          Desde el 02/03/2025 &#10084;&#65039;
+        </p>
+
+        <button id="startBtn" type="button">
+          Abrir Mi Coraz&oacute;n &#128156;
+        </button>
+      </div>
+
+      <div class="scroll-hint">Desliza</div>
+    </section>
+
+    <section id="heartSection" class="heart-section">
+      <h2>&#128156; Mi Coraz&oacute;n Para Ti &#128156;</h2>
+
+      <div class="heart-container">
+        <div class="heart-glow"></div>
+
+        <div class="heart">
+          <img id="heartPhoto" src="img/heart1.jpg" alt="Foto especial de Brithany">
+        </div>
+      </div>
+    </section>
+
+    <section id="loveCounter" class="glass section">
+      <div class="section-label">Contando cada instante</div>
+      <h2>&#9203; Nuestro Tiempo Juntos</h2>
+
+      <div id="contador" class="counter-grid">
+        <div class="time-box">
+          <span id="days">0</span>
+          <small>D&iacute;as</small>
+        </div>
+
+        <div class="time-box">
+          <span id="hours">0</span>
+          <small>Horas</small>
+        </div>
+
+        <div class="time-box">
+          <span id="minutes">0</span>
+          <small>Minutos</small>
+        </div>
+
+        <div class="time-box">
+          <span id="seconds">0</span>
+          <small>Segundos</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="glass section timeline-section">
+      <div class="section-label">Nuestra historia</div>
+      <h2>&#10024; Peque&ntilde;os Momentos Gigantes &#10024;</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <span>02/03/2025</span>
+          <p>El d&iacute;a donde empez&oacute; algo que cambi&oacute; mi vida.</p>
+        </div>
+
+        <div class="timeline-item">
+          <span>Cada abrazo</span>
+          <p>Un lugar donde todo se siente tranquilo y bonito.</p>
+        </div>
+
+        <div class="timeline-item">
+          <span>Hoy</span>
+          <p>Tu cumplea&ntilde;os, tus 20, y mi coraz&oacute;n celebr&aacute;ndote.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="musicSection" class="glass section">
+      <div class="section-label">Nuestra canci&oacute;n</div>
+      <h2>&#127925; La M&uacute;sica De Nosotros</h2>
+
+      <div class="music-card">
+        <div>
+          <strong>Can't Help Falling In Love</strong>
+          <p>Presiona el bot&oacute;n de m&uacute;sica o dale play aqu&iacute;.</p>
+        </div>
+
+        <audio controls>
+          <source src="music/Elvis Presley — Can't Help Falling In Love [Sub. Español] - armxndo (128k).mp3" type="audio/mpeg">
+          Tu navegador no puede reproducir este audio.
+        </audio>
+      </div>
+    </section>
+
+    <section id="gallery" class="glass section">
+      <div class="section-label">Recuerdos</div>
+      <h2>&#128248; Nuestros Recuerdos &#128248;</h2>
+
+      <div class="carousel">
+        <button class="carousel-btn prev" type="button" aria-label="Foto anterior">&#10094;</button>
+
+        <div class="gallery-track" id="galleryTrack">
+          <div class="photo-card is-active">
+            <img src="img/heart1.jpg" alt="Recuerdo 1">
+          </div>
+          <div class="photo-card">
+            <img src="img/heart2.jpg" alt="Recuerdo 2">
+          </div>
+          <div class="photo-card">
+            <img src="img/heart3.jpg" alt="Recuerdo 3">
+          </div>
+          <div class="photo-card">
+            <img src="img/heart4.jpg" alt="Recuerdo 4">
+          </div>
+          <div class="photo-card">
+            <img src="img/heart5.jpg" alt="Recuerdo 5">
+          </div>
+        </div>
+
+        <button class="carousel-btn next" type="button" aria-label="Foto siguiente">&#10095;</button>
+      </div>
+
+      <div class="carousel-dots" id="carouselDots"></div>
+    </section>
+
+    <section id="letterSection" class="glass section">
+      <div class="section-label">Carta</div>
+      <h2>&#128140; Una Carta Para Mi Amor &#128140;</h2>
+
+      <button id="openLetter" type="button">
+        Abrir Mi Carta &#128156;
+      </button>
+
+      <div id="letterContainer"></div>
+    </section>
+
+    <section id="reasons" class="glass section">
+      <div class="section-label">Tus 20</div>
+      <h2>&#128156; 20 Razones Por Las Que Te Amo &#128156;</h2>
+
+      <div class="love-grid reasons-20">
+        <div><span>01</span> Tu sonrisa</div>
+        <div><span>02</span> Tus abrazos</div>
+        <div><span>03</span> Tu coraz&oacute;n</div>
+        <div><span>04</span> Tu mirada</div>
+        <div><span>05</span> Tu ternura</div>
+        <div><span>06</span> Tu forma de ser</div>
+        <div><span>07</span> C&oacute;mo me cuidas</div>
+        <div><span>08</span> Tus mensajes</div>
+        <div><span>09</span> Nuestra canci&oacute;n</div>
+        <div><span>10</span> Hablar contigo</div>
+        <div><span>11</span> Re&iacute;r contigo</div>
+        <div><span>12</span> Tu paciencia</div>
+        <div><span>13</span> Tus ocurrencias</div>
+        <div><span>14</span> Tu compa&ntilde;&iacute;a</div>
+        <div><span>15</span> Tu manera de amar</div>
+        <div><span>16</span> La paz que me das</div>
+        <div><span>17</span> Tus sue&ntilde;os</div>
+        <div><span>18</span> Tu risa</div>
+        <div><span>19</span> Todo lo que eres</div>
+        <div><span>20</span> Porque eres t&uacute;</div>
+      </div>
+    </section>
+
+    <section class="glass section">
+      <div class="section-label">Tu favorita</div>
+      <h2>&#128420; Kuromi, porque s&eacute; cu&aacute;nto te gusta &#128156;</h2>
+
+      <div class="kuromi-gallery">
+        <img src="img/kuromi1.png" alt="Kuromi 1">
+        <img src="img/kuromi2.png" alt="Kuromi 2">
+        <img src="img/kuromi1.png" alt="Kuromi 3">
+        <img src="img/kuromi2.png" alt="Kuromi 4">
+      </div>
+    </section>
+
+    <section class="glass section wish-section">
+      <div class="section-label">Tus 20 a&ntilde;os</div>
+      <h2>&#127874; Que Esta Nueva Etapa Sea Hermosa &#127874;</h2>
+      <p class="birthdayText">20 a&ntilde;os iluminando el mundo.</p>
+      <p class="birthdayText">20 a&ntilde;os siendo una persona incre&iacute;ble.</p>
+      <p class="birthdayText">20 a&ntilde;os de alguien que cambi&oacute; mi vida para siempre.</p>
+    </section>
+
+    <section class="glass section">
+      <div class="section-label">Notitas</div>
+      <h2>&#128140; Notitas Para Mi Amor &#128140;</h2>
+
+      <div class="notes">
+        <div class="note">Te elegir&iacute;a una y mil veces &#128156;</div>
+        <div class="note">Gracias por existir &#10084;&#65039;</div>
+        <div class="note">Mi lugar favorito eres t&uacute; &#127801;</div>
+        <div class="note">Feliz cumplea&ntilde;os mi amor &#127874;</div>
+        <div class="note">Siempre t&uacute; &#128156;</div>
+        <div class="note">Te amo infinitamente &#10084;&#65039;</div>
+      </div>
+    </section>
+
+    <section class="glass section">
+      <div class="section-label">Secreto</div>
+      <h2>&#128274; Mensaje Secreto &#128274;</h2>
+
+      <button id="secretBtn" type="button">
+        Abrir &#128156;
+      </button>
+
+      <div id="secretMessage">
+        <h2>&#128156; Mi Amor &#128156;</h2>
+        <p>Si pudiera volver al d&iacute;a en que te conoc&iacute;, volver&iacute;a a elegirte una y otra vez.</p>
+        <p>Porque eres una de las mejores cosas que me han pasado.</p>
+      </div>
+    </section>
+
+    <section id="videoSection" class="glass section">
+      <div class="section-label">Video</div>
+      <h2>&#127909; Nuestros Momentos</h2>
+
+      <video controls>
+        <source src="videos/video2.mp4" type="video/mp4">
+        Tu navegador no puede reproducir este video.
+      </video>
+    </section>
+
+    <section id="finalSection" class="glass section finalSection">
+      <div class="section-label">Gran final</div>
+      <h2>&#10084;&#65039; Una &Uacute;ltima Pregunta &#10084;&#65039;</h2>
+
+      <button id="finalBtn" type="button">
+        Haz Clic Aqu&iacute; &#128156;
+      </button>
+
+      <button id="surpriseBtn" type="button">
+        Sorpresa Final &#128156;
+      </button>
+
+      <div id="finalMessage">
+        <h1>&#128156; FELIZ CUMPLEA&Ntilde;OS MI AMOR &#128156;</h1>
+        <h2>BRITHANY</h2>
+        <p>Gracias por existir.</p>
+        <p>Gracias por compartir tu vida conmigo.</p>
+        <p>Espero seguir celebrando muchos cumplea&ntilde;os m&aacute;s contigo.</p>
+        <h3>TE AMO INFINITAMENTE &#10084;&#65039;</h3>
+        <h4>Rodrigo &#128156;</h4>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

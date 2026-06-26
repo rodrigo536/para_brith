@@ -1,0 +1,914 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(
+        180deg,
+        #13001f,
+        #220038,
+        #33004d,
+        #13001f
+    );
+    color:white;
+    overflow-x:hidden;
+}
+
+/* --------------------- */
+/* FONDO */
+/* --------------------- */
+
+#particles{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+
+    background-image:
+    radial-gradient(white 1px, transparent 1px);
+
+    background-size:40px 40px;
+
+    opacity:.15;
+
+    z-index:-1;
+}
+
+/* --------------------- */
+/* HERO */
+/* --------------------- */
+
+.hero{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+    padding:20px;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero-content h1{
+    font-family:'Great Vibes',cursive;
+    font-size:6rem;
+
+    color:#ffb8ff;
+
+    text-shadow:
+    0 0 15px #ff00ff,
+    0 0 30px #ff00ff;
+}
+
+.hero-content h2{
+    font-size:3rem;
+    margin-top:10px;
+}
+
+.hero-content p{
+    margin-top:20px;
+    font-size:1.2rem;
+}
+
+#startBtn{
+    margin-top:30px;
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#ff00ff;
+
+    color:white;
+
+    font-size:1rem;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 0 20px #ff00ff;
+}
+
+/* --------------------- */
+/* KUROMI */
+/* --------------------- */
+
+.kuromi{
+    width:140px;
+
+    position:absolute;
+
+    animation:float 4s infinite ease-in-out;
+}
+
+.kuromi-left{
+    left:40px;
+    top:50px;
+}
+
+.kuromi-right{
+    right:40px;
+    top:50px;
+}
+
+@keyframes float{
+
+    50%{
+        transform:translateY(-20px);
+    }
+
+}
+
+/* --------------------- */
+/* HEART */
+/* --------------------- */
+
+#heartSection{
+    padding:100px 20px;
+
+    text-align:center;
+}
+
+#heartSection h2{
+    margin-bottom:40px;
+}
+
+.heart-container{
+
+    width:350px;
+    height:350px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    border:5px solid #ff59ff;
+
+    box-shadow:
+    0 0 20px #ff00ff,
+    0 0 50px #ff00ff,
+    0 0 100px #ff00ff;
+
+    animation:pulse 2s infinite;
+}
+
+.heart-container img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+@keyframes pulse{
+
+    50%{
+        transform:scale(1.05);
+    }
+
+}
+
+/* --------------------- */
+/* CONTADOR */
+/* --------------------- */
+
+#loveCounter{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.counter-grid{
+
+    margin-top:40px;
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.time-box{
+
+    width:120px;
+
+    padding:25px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.15);
+}
+
+.time-box span{
+
+    font-size:2rem;
+
+    color:#ffb8ff;
+
+    font-weight:bold;
+}
+
+/* --------------------- */
+/* MUSIC */
+/* --------------------- */
+
+#musicSection{
+    padding:100px 20px;
+    text-align:center;
+}
+
+audio{
+    width:min(500px,90%);
+    margin-top:20px;
+}
+
+/* --------------------- */
+/* GALERIA */
+/* --------------------- */
+
+#gallery{
+    padding:100px 20px;
+}
+
+#gallery h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.gallery-track{
+
+    display:flex;
+
+    gap:15px;
+
+    overflow-x:auto;
+
+    padding:20px;
+}
+
+.gallery-track img{
+
+    width:250px;
+    height:320px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    flex-shrink:0;
+
+    box-shadow:
+    0 0 15px #ff00ff;
+}
+
+/* --------------------- */
+/* CARTA */
+/* --------------------- */
+
+#letterSection{
+    padding:100px 20px;
+    text-align:center;
+}
+
+#openLetter{
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#ff00ff;
+
+    color:white;
+
+    cursor:pointer;
+}
+
+#letterContainer{
+
+    display:none;
+
+    max-width:900px;
+
+    margin:40px auto;
+
+    background:white;
+
+    color:black;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:left;
+
+    line-height:1.9;
+}
+
+/* --------------------- */
+/* VIDEO */
+/* --------------------- */
+
+#videoSection{
+    padding:100px 20px;
+    text-align:center;
+}
+
+video{
+
+    width:min(800px,95%);
+
+    border-radius:20px;
+
+    margin-top:20px;
+}
+
+/* --------------------- */
+/* RAZONES */
+/* --------------------- */
+
+#reasons{
+
+    padding:100px 20px;
+}
+
+#reasons h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.reasons-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+    max-width:1000px;
+
+    margin:auto;
+}
+
+.reasons-grid div{
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    background:
+    rgba(255,255,255,.08);
+}
+
+/* --------------------- */
+/* FINAL */
+/* --------------------- */
+
+#finalSection{
+
+    padding:120px 20px;
+
+    text-align:center;
+}
+
+#surpriseBtn{
+
+    padding:20px 40px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#ff00ff;
+
+    color:white;
+
+    font-size:1.1rem;
+
+    cursor:pointer;
+}
+
+/* --------------------- */
+/* RESPONSIVE */
+/* --------------------- */
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:4rem;
+}
+
+.hero-content h2{
+    font-size:2rem;
+}
+
+.kuromi{
+    width:90px;
+}
+
+.heart-container{
+    width:260px;
+    height:260px;
+}
+
+.time-box{
+    width:90px;
+}
+
+}
+
+/* ==================================
+   TÍTULOS GENERALES
+================================== */
+
+.section h2{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    color:#f1d4ff;
+
+    text-shadow:
+    0 0 10px #c878ff,
+    0 0 20px #c878ff;
+
+}
+
+/* ==================================
+   CARTA
+================================== */
+
+#letterContainer{
+
+    display:none;
+
+    margin-top:30px;
+
+}
+
+.letter{
+
+    background:
+    rgba(255,255,255,.05);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    line-height:2;
+
+    animation:
+    fadeLetter .8s ease;
+
+}
+
+.letter h3{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+.letter h4{
+
+    text-align:right;
+
+    margin-top:30px;
+
+}
+
+@keyframes fadeLetter{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+
+    }
+
+}
+
+/* ==================================
+   COSAS QUE AMO DE TI
+================================== */
+
+.love-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+}
+
+.love-grid div{
+
+    background:
+    rgba(255,255,255,.08);
+
+    padding:20px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.4s;
+
+}
+
+.love-grid div:hover{
+
+    transform:
+    translateY(-10px)
+    scale(1.03);
+
+    box-shadow:
+    0 0 25px rgba(210,120,255,.7);
+
+}
+
+/* ==================================
+   KUROMI GALLERY
+================================== */
+
+.kuromi-gallery{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+}
+
+.kuromi-gallery img{
+
+    width:180px;
+
+    height:auto;
+
+    display:block;
+
+}
+
+/* ==================================
+   CUMPLEAÑOS
+================================== */
+
+.birthdayText{
+
+    text-align:center;
+
+    margin:15px 0;
+
+    font-size:1.2rem;
+
+}
+
+/* ==================================
+   NOTITAS
+================================== */
+
+.notes{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+.note{
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(255,210,255,.15),
+    rgba(190,120,255,.15)
+    );
+
+    padding:25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    font-weight:600;
+
+    transition:.4s;
+
+}
+
+.note:hover{
+
+    transform:
+    rotate(-2deg)
+    scale(1.04);
+
+}
+
+/* ==================================
+   MENSAJE SECRETO
+================================== */
+
+#secretMessage{
+
+    display:none;
+
+    margin-top:30px;
+
+    text-align:center;
+
+    line-height:2;
+
+}
+
+#secretBtn{
+
+    display:block;
+
+    margin:auto;
+
+}
+
+/* ==================================
+   FINAL ÉPICO
+================================== */
+
+.finalSection{
+
+    text-align:center;
+
+}
+
+#finalMessage{
+
+    display:none;
+
+    margin-top:40px;
+
+    animation:
+    glowAppear 1s ease;
+
+}
+
+#finalMessage h1{
+
+    font-size:3rem;
+
+    color:#ffd7ff;
+
+    text-shadow:
+    0 0 20px #c878ff,
+    0 0 40px #c878ff;
+
+}
+
+#finalMessage h2{
+
+    font-size:2rem;
+
+    margin-top:20px;
+
+}
+
+#finalMessage h3{
+
+    margin-top:25px;
+
+    color:#ffb7ff;
+
+}
+
+@keyframes glowAppear{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        scale(1);
+
+    }
+
+}
+
+/* ==================================
+   BOTONES PREMIUM
+================================== */
+
+#openLetter,
+#secretBtn,
+#finalBtn{
+
+    display:block;
+
+    margin:auto;
+
+    margin-top:20px;
+
+    margin-bottom:20px;
+
+}
+
+/* ==================================
+   RESPONSIVE
+================================== */
+
+@media(max-width:768px){
+
+    .kuromi-gallery img{
+
+        width:100px;
+
+    }
+
+    #finalMessage h1{
+
+        font-size:2rem;
+
+    }
+
+}
+/* ==================================
+   CONTADOR
+================================== */
+
+#contador{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    margin-top:30px;
+
+}
+
+.time-box{
+
+    width:120px;
+
+    height:120px;
+
+    background:
+    rgba(255,255,255,.08);
+
+    border-radius:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:
+    0 0 20px rgba(200,100,255,.4);
+
+}
+
+.time-box span{
+
+    font-size:2rem;
+
+    font-weight:bold;
+
+}
+
+.time-box small{
+
+    margin-top:10px;
+
+    opacity:.8;
+
+}
+.section{
+
+    width:min(1200px,90%);
+
+    margin:80px auto;
+
+}
+
+.glass{
+
+    background:
+    rgba(255,255,255,.05);
+
+    backdrop-filter:blur(10px);
+
+    padding:40px;
+
+    border-radius:30px;
+
+    border:
+    1px solid rgba(255,255,255,.1);
+
+}
+.corner{
+
+    position:fixed;
+
+    width:120px;
+
+    z-index:100;
+
+    opacity:.95;
+
+}
+
+.top-left{
+top:20px;
+left:20px;
+}
+
+.top-right{
+top:20px;
+right:20px;
+}
+
+.bottom-left{
+bottom:20px;
+left:20px;
+}
+
+.bottom-right{
+bottom:20px;
+right:20px;
+}
+.photo-card{
+
+    min-height:350px;
+
+}
+
+.photo-card img{
+
+    width:100%;
+
+    height:350px;
+
+    object-fit:cover;
+
+    display:block;
+
+}
